@@ -5,9 +5,85 @@
   <title>Pintukumar-resume</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/kumar-resume/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/jquery-ui.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/aos.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/style.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/style_copy.css">
+  <link rel="stylesheet" href="/assets/kumar-resume/css/css-design.css">
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
   <app-root></app-root>
+
+<script src="/assets/kumar-resume/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/kumar-resume/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/assets/kumar-resume/js/jquery-ui.js"></script>
+<script src="/assets/kumar-resume/js/popper.min.js"></script>
+<script src="/assets/kumar-resume/js/bootstrap.min.js"></script>
+<script src="/assets/kumar-resume/js/owl.carousel.min.js"></script>
+<script src="/assets/kumar-resume/js/jquery.stellar.min.js"></script>
+<script src="/assets/kumar-resume/js/jquery.countdown.min.js"></script>
+<script src="/assets/kumar-resume/js/bootstrap-datepicker.min.js"></script>
+<script src="/assets/kumar-resume/js/jquery.easing.1.3.js"></script>
+<script src="/assets/kumar-resume/js/aos.js"></script>
+<script src="/assets/kumar-resume/js/jquery.fancybox.min.js"></script>
+<script src="/assets/kumar-resume/js/jarallax.min.js"></script>
+<script src="/assets/kumar-resume/js/jarallax-element.min.js"></script>
+<script src="/assets/kumar-resume/js/lozad.min.js"></script>
+<script src="/assets/kumar-resume/js/modernizr.min.js"></script>
+<script src="/assets/kumar-resume/js/three.min.js"></script>
+<script src="/assets/kumar-resume/js/TweenMax.min.js"></script>
+<script src="/assets/kumar-resume/js/OBJLoader.js"></script>
+<script src="/assets/kumar-resume/js/ParticleHead.js"></script>
+<script src="/assets/kumar-resume/css/bootstrap/bootstrap.bundle.js"></script>
+<script src="/assets/kumar-resume/css/waypoints/waypoints.min.js"></script>    
+<script src="/assets/kumar-resume/js/main.js"></script>
+<script src="/assets/kumar-resume/js/jquery.sticky.js"></script>
+<script src="src/assets/kumar-resume/js/typed.js"></script>
+<script src="src/assets/kumar-resume/js/custmize.js"></script>
+
 </body>
 </html>
+<script>
+  var typed = new Typed('.typed-words', {
+      strings: ["Web Apps","HTML CSS JS JQuery AJAX BOOTSTRAP", "PHP(Laravel) VUE.JS API INTEGRATION",".NET C# WPF","MYSQL MS SQL","GIT LINUX HOMESTEAD VM BOX"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+    });
+  
+  // Causes progress
+  $('.causes-progress').waypoint(function () {
+    $('.progress .progress-bar').each(function () {
+      $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    });
+  }, {offset: '100%'});
+  
+  //education list 
+  $(document).ready(function() {
+  $('#education-list').on('click',function(){
+    
+    //document.getElementsByClassName("progress-bar").innerHTML = "";
+    //document.getElementsByClassName("progress-bar").innerHTML = "";
+  });
+  });
+</script>
