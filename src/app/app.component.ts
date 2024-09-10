@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     .pipe(
       switchMap((value:any) => {
         this.ipAddress = value.ip;  
-        let url =`http://api.ipstack.com/${this.ipAddress}?access_key=969b80f4d1f2badf41ff3ebb7feda531`;
+        let url =`https://api.ipstack.com/${this.ipAddress}?access_key=969b80f4d1f2badf41ff3ebb7feda531`;
         return this.http.get(url);
       })
     )
