@@ -84,3 +84,221 @@
     top: 33px;
     }
     
+
+    .unit-4-icon {
+      display: inline-block;
+      font-size: 30px;
+      background-color: #f8f9fa; /* light background */
+      padding: 10px;
+      border-radius: 50%;
+      border: 2px solid #007bff; /* blue border */
+      color: #007bff; /* text color */
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .unit-4-icon:hover {
+      background-color: #007bff; /* blue background on hover */
+      color: #ffffff; /* white text on hover */
+    }
+    
+    .email-icon {
+      border-color: #28a745; /* green border */
+      color: #28a745; /* green text */
+    }
+    
+    .email-icon:hover {
+      background-color: #28a745; /* green background on hover */
+      color: #ffffff; /* white text on hover */
+    }
+    
+    @media (max-width: 768px) {
+      .unit-4 {
+        margin-bottom: 20px;
+      }
+      
+      .unit-4-icon {
+        font-size: 24px;
+        padding: 8px;
+      }
+    }
+
+    
+
+    .img-container {
+      width: 100%;
+      max-width: 200px; /* Control the maximum size of the image */
+      margin: 0 auto; /* Center the image */
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%; /* Makes the image a circle */
+    }
+    
+    .img-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; /* Crops the image to fit the container */
+      border-radius: 50%; /* Ensures the image within stays circular */
+    }
+    
+    @media (max-width: 768px) {
+      .img-container {
+        max-width: 200px; /* Adjust size for smaller screens */
+      }
+    }
+    
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+.site-section-heading1 {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 1.8rem; /* Larger font size for emphasis */
+  font-weight: 600; /* Bold font weight */
+  color: #333; /* Darker color for contrast */
+  letter-spacing: 1.5px; /* Slight spacing between letters */
+  text-transform: uppercase; /* Converts text to uppercase for a stronger look */
+  /* Centers the heading */
+  position: relative; /* To position the decorative underline */
+  padding-bottom: 10px;
+}
+
+.site-section-heading1::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background-color: #007bff; /* Add a colored underline */
+  bottom: 0;
+  left: 14%;
+ transform: translateX(-50%); 
+  border-radius: 2px; /* Rounded edges for the underline */
+}
+
+@media (max-width: 768px) {
+  .site-section-heading1 {
+    font-size: 2rem; /* Adjust the font size on smaller screens */
+  }
+}
+.site-section-heading::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.site-section-heading::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.intro-text {
+  font-family: 'Roboto', sans-serif; /* Professional and clean font */
+  font-size: 1.25rem; /* Slightly larger font size */
+  font-weight: 500; /* Medium weight for balance */
+  color: #555; /* Medium gray color for a professional look */
+  line-height: 1.6; /* Good line spacing for readability */
+  text-align: justify; /* Align text for a clean block appearance */
+  margin-bottom: 20px; /* Add space below the paragraph */
+  letter-spacing: 0.5px; /* Light spacing for readability */
+  padding: 10px; /* Slight padding around the text */
+  border-left: 4px solid #007bff; /* Blue accent line on the left for emphasis */
+  background-color: #f8f9fa; /* Light background for subtle contrast */
+  border-radius: 8px; /* Rounded corners for a smooth look */
+}
+
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: 1.1rem; /* Adjust size for smaller screens */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@400&display=swap');
+
+/* General Styling for Contact Boxes */
+.contact-box {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.unit-4-icon {
+  font-size: 35px;
+  color: #007bff; /* Default color for icons */
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-box:hover .unit-4-icon {
+  background-color: #007bff; /* Change to blue on hover */
+  color: #ffffff; /* White icon on hover */
+}
+
+/* Email-specific Icon Styling */
+.email-icon {
+  color: #28a745;
+  border-color: #28a745; /* Green border */
+}
+
+.contact-box:hover .email-icon {
+  background-color: #28a745;
+  color: #ffffff; /* White icon on hover */
+}
+
+/* Text Styling */
+.contact-box h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #333; /* Darker color for the heading */
+}
+
+.contact-box p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.contact-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-box {
+    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .unit-4-icon {
+    margin-bottom: 15px;
+  }
+}
