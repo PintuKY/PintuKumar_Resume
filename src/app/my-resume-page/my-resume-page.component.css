@@ -77,51 +77,7 @@
     background: #fff;
     border: 2px solid rgba(255, 255, 255, 0.72);
     border-radius: 14px;
-    
     }
-    .our-project .unit-4{
-    position: relative;
-    top: 33px;
-    }
-    
-
-    .unit-4-icon {
-      display: inline-block;
-      font-size: 30px;
-      background-color: #f8f9fa; /* light background */
-      padding: 10px;
-      border-radius: 50%;
-      border: 2px solid #007bff; /* blue border */
-      color: #007bff; /* text color */
-      transition: background-color 0.3s, color 0.3s;
-    }
-    
-    .unit-4-icon:hover {
-      background-color: #007bff; /* blue background on hover */
-      color: #ffffff; /* white text on hover */
-    }
-    
-    .email-icon {
-      border-color: #28a745; /* green border */
-      color: #28a745; /* green text */
-    }
-    
-    .email-icon:hover {
-      background-color: #28a745; /* green background on hover */
-      color: #ffffff; /* white text on hover */
-    }
-    
-    @media (max-width: 768px) {
-      .unit-4 {
-        margin-bottom: 20px;
-      }
-      
-      .unit-4-icon {
-        font-size: 24px;
-        padding: 8px;
-      }
-    }
-
     
 
     .img-container {
@@ -208,7 +164,7 @@
   margin-bottom: 20px; /* Add space below the paragraph */
   letter-spacing: 0.5px; /* Light spacing for readability */
   padding: 10px; /* Slight padding around the text */
-  border-left: 4px solid #007bff; /* Blue accent line on the left for emphasis */
+  border-left: 8px solid #00050a; /* Blue accent line on the left for emphasis */
   background-color: #f8f9fa; /* Light background for subtle contrast */
   border-radius: 8px; /* Rounded corners for a smooth look */
 }
@@ -232,6 +188,7 @@
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 8px solid #007bff;
 }
 
 .contact-box:hover {
@@ -297,8 +254,89 @@
     flex-direction: column;
     text-align: center;
   }
-
   .unit-4-icon {
     margin-bottom: 15px;
+  }
+}
+
+
+/* work section */
+
+
+/* General Styles for Contact Boxes */
+.contact-box1 {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0px;
+}
+
+.contact-box1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styles */
+.title1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Icon and Description Styles */
+.icon-description1 {
+  display: flex;
+  align-items: center;
+}
+
+.icon1 {
+  margin-right: 15px;
+  /* background-color: #ffffff;
+  border-radius: 50%; */
+  padding: 0px;
+  /* border: 2px solid #007bff;  */
+   transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-box1:hover .icon1 {
+  background-color: #007bff;
+  border-color: #ffffff;
+}
+
+.description1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Text Link Styles */
+.text-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-box1 {
+    padding: 15px;
+  }
+
+  .icon-description1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon1 {
+    margin-bottom: 10px;
   }
 }
