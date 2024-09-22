@@ -58,8 +58,6 @@
     background: rgba(255, 255, 255, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.72);
     border-radius: 14px;
-    /* box-sizing: border-box; */
-    /* border-radius: calc(min(max(calc(19px +(28 - 19)*((100vw - 1200px) /(1600 - 1200))), 19px), 26px)); */
     }
     .ft-feature-1 .company-info {
     width: auto;
@@ -67,7 +65,6 @@
     text-align: center;
     position: relative;
     background: #ffffff;;
-    /* background: rgba(255, 255, 255, 0.4); */
     border: 2px solid rgba(255, 255, 255, 0.72);
     border-radius: 14px;
     }
@@ -82,38 +79,28 @@
 
     .img-container {
       width: 100%;
-      max-width: 200px; /* Control the maximum size of the image */
-      margin: 0 auto; /* Center the image */
+      max-width: 200px; 
+      margin: 0 auto;
       position: relative;
       overflow: hidden;
-      border-radius: 50%; /* Makes the image a circle */
+      border-radius: 50%; 
     }
     
     .img-container img {
       width: 100%;
       height: auto;
-      object-fit: cover; /* Crops the image to fit the container */
-      border-radius: 50%; /* Ensures the image within stays circular */
+      object-fit: cover; 
+      border-radius: 50%; 
     }
     
-    @media (max-width: 768px) {
-      .img-container {
-        max-width: 200px; /* Adjust size for smaller screens */
-      }
-    }
-    
-
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
-
 .site-section-heading1 {
-  font-family: 'Poppins', sans-serif; /* Modern, clean font */
-  font-size: 1.8rem; /* Larger font size for emphasis */
-  font-weight: 600; /* Bold font weight */
-  color: #333; /* Darker color for contrast */
-  letter-spacing: 1.5px; /* Slight spacing between letters */
-  text-transform: uppercase; /* Converts text to uppercase for a stronger look */
-  /* Centers the heading */
-  position: relative; /* To position the decorative underline */
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
   padding-bottom: 10px;
 }
 
@@ -122,18 +109,13 @@
   position: absolute;
   width: 150px;
   height: 4px;
-  background-color: #007bff; /* Add a colored underline */
+  background-color: #007bff; 
   bottom: 0;
   left: 14%;
  transform: translateX(-50%); 
-  border-radius: 2px; /* Rounded edges for the underline */
+  border-radius: 2px;
 }
 
-@media (max-width: 768px) {
-  .site-section-heading1 {
-    font-size: 2rem; /* Adjust the font size on smaller screens */
-  }
-}
 .site-section-heading::before {
   content: '';
   position: absolute;
@@ -155,31 +137,19 @@
   left: calc(50% - 20px);
 }
 .intro-text {
-  font-family: 'Roboto', sans-serif; /* Professional and clean font */
-  font-size: 1.25rem; /* Slightly larger font size */
-  font-weight: 500; /* Medium weight for balance */
-  color: #555; /* Medium gray color for a professional look */
-  line-height: 1.6; /* Good line spacing for readability */
-  text-align: justify; /* Align text for a clean block appearance */
-  margin-bottom: 20px; /* Add space below the paragraph */
-  letter-spacing: 0.5px; /* Light spacing for readability */
-  padding: 10px; /* Slight padding around the text */
-  border-left: 8px solid #00050a; /* Blue accent line on the left for emphasis */
-  background-color: #f8f9fa; /* Light background for subtle contrast */
-  border-radius: 8px; /* Rounded corners for a smooth look */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.25rem; 
+  font-weight: 500; 
+  color: #555; 
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  border-left: 8px solid #00050a;
+  background-color: #f8f9fa;
+  border-radius: 8px;
 }
-
-@media (max-width: 768px) {
-  .intro-text {
-    font-size: 1.1rem; /* Adjust size for smaller screens */
-    padding: 8px; /* Reduce padding for smaller screens */
-  }
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@400&display=swap');
-
-/* General Styling for Contact Boxes */
 .contact-box {
   display: flex;
   align-items: center;
@@ -192,14 +162,14 @@
 }
 
 .contact-box:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Icon Styling */
 .unit-4-icon {
   font-size: 35px;
-  color: #007bff; /* Default color for icons */
+  color: #007bff;
   background-color: #ffffff;
   padding: 15px;
   border-radius: 50%;
@@ -208,27 +178,25 @@
 }
 
 .contact-box:hover .unit-4-icon {
-  background-color: #007bff; /* Change to blue on hover */
-  color: #ffffff; /* White icon on hover */
+  background-color: #007bff;
+  color: #ffffff; 
 }
 
-/* Email-specific Icon Styling */
 .email-icon {
   color: #28a745;
-  border-color: #28a745; /* Green border */
+  border-color: #28a745; 
 }
 
 .contact-box:hover .email-icon {
   background-color: #28a745;
-  color: #ffffff; /* White icon on hover */
+  color: #ffffff;
 }
 
-/* Text Styling */
 .contact-box h3 {
   font-family: 'Nunito', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 5px;
-  color: #333; /* Darker color for the heading */
+  color: #333;
 }
 
 .contact-box p {
@@ -246,22 +214,6 @@
 .contact-box a:hover {
   text-decoration: underline;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .contact-box {
-    padding: 15px;
-    flex-direction: column;
-    text-align: center;
-  }
-  .unit-4-icon {
-    margin-bottom: 15px;
-  }
-}
-
-
-/* work section */
-
 
 /* General Styles for Contact Boxes */
 .contact-box1 {
@@ -288,7 +240,6 @@
   margin-bottom: 10px;
 }
 
-/* Icon and Description Styles */
 .icon-description1 {
   display: flex;
   align-items: center;
@@ -296,16 +247,8 @@
 
 .icon1 {
   margin-right: 15px;
-  /* background-color: #ffffff;
-  border-radius: 50%; */
   padding: 0px;
-  /* border: 2px solid #007bff;  */
    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.contact-box1:hover .icon1 {
-  background-color: #007bff;
-  border-color: #ffffff;
 }
 
 .description1 {
@@ -315,7 +258,6 @@
   margin: 0;
 }
 
-/* Text Link Styles */
 .text-link {
   color: #007bff;
   text-decoration: none;
@@ -323,20 +265,4 @@
 
 .text-link:hover {
   text-decoration: underline;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .contact-box1 {
-    padding: 15px;
-  }
-
-  .icon-description1 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .icon1 {
-    margin-bottom: 10px;
-  }
 }
