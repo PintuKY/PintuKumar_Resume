@@ -64,7 +64,8 @@ export class MyResumePageComponent implements OnInit {
         this.currentProgress2 = 100;
       } else if (this.currentProgress2 < 0) {
         this.currentProgress2 = 0;
-      }  
+      }
+
   // Causes progress
   // $('.causes-progress').waypoint(function () {
   //   $('.progress .progress-bar').each(function () {
@@ -80,7 +81,12 @@ export class MyResumePageComponent implements OnInit {
   //   //document.getElementsByClassName("progress-bar").innerHTML = "";
   // });
   // });
-
+  }
+  downloadPDF() {
+    const link = document.createElement('a');
+    link.href = 'assets/Profile.pdf';  // Path to your PDF in the assets folder
+    link.download = 'Profile.pdf';     // The name to give the downloaded PDF
+    link.click();
   }
 
 }

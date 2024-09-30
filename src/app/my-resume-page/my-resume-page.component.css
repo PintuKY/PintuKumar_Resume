@@ -155,7 +155,7 @@
   align-items: center;
   background-color: #f8f9fa;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-left: 8px solid #007bff;
@@ -171,7 +171,7 @@
   font-size: 35px;
   color: #007bff;
   background-color: #ffffff;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
   border: 2px solid #007bff;
   transition: background-color 0.3s ease, color 0.3s ease;
