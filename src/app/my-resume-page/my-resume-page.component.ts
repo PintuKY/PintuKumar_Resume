@@ -82,11 +82,5 @@ export class MyResumePageComponent implements OnInit {
   // });
   // });
   }
-  downloadPDF() {
-    const link = document.createElement('a');
-    link.href = 'assets/Profile.pdf';  // Path to your PDF in the assets folder
-    link.download = 'Profile.pdf';     // The name to give the downloaded PDF
-    link.click();
-  }
 
 }

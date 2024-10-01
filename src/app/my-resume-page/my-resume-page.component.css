@@ -266,3 +266,18 @@
 .text-link:hover {
   text-decoration: underline;
 }
+
+.read-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; 
+}
+.read-more-container a {
+  text-align: center;
+  color: blue;
+  text-decoration: none;
+}
+.read-more-container a:hover {
+  text-decoration: underline;
+}
